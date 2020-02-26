@@ -1,0 +1,23 @@
+.navbar {
+  background-color: #a9e5bb;
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: 50% 50%;
+  justify-content: center;
+  justify-items: center;
+}
+
+.left {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.right {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.bottom {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
