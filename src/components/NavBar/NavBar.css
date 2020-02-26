@@ -2,7 +2,7 @@
   background-color: #a9e5bb;
   display: grid;
   grid-template-columns: 10% 40% 40% 10%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: auto auto;
   justify-content: center;
   justify-items: center;
 }
