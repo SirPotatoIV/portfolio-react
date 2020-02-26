@@ -1,11 +1,11 @@
 import React from "react";
+import Bio from "../../components/Bio";
 import ProjectCard from "../../components/ProjectCard";
 import { projects } from "../../data/projects";
 
 export default function MainPage() {
   return (
     <div>
-      <h1>Main Page</h1>
       {projects.map(project => (
         <ProjectCard
           deployedLink={project.deployedLink}
@@ -17,6 +17,7 @@ export default function MainPage() {
           techUsed={project.techUsed}
         />
       ))}
+      <Bio />
     </div>
   );
 }
