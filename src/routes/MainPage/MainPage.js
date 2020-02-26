@@ -1,6 +1,7 @@
 import React from "react";
 import "./MainPage.css";
 import Bio from "../../components/Bio";
+import Footer from "../../components/Footer/Footer";
 import ProjectCard from "../../components/ProjectCard";
 import { projects } from "../../data/projects";
 
@@ -25,6 +26,7 @@ export default function MainPage() {
         <h1>Bio</h1>
         <Bio />
       </section>
+      <Footer />
     </div>
   );
 }
