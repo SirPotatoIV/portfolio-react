@@ -6,10 +6,10 @@ import ContactInfo from "../ContactInfo";
 
 export default function NavBar() {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <Logo className="left" />
       <NavBarLinks className="right" />
       <ContactInfo />
-    </div>
+    </nav>
   );
 }
