@@ -7,8 +7,8 @@ import ContactInfo from "../ContactInfo";
 export default function NavBar() {
   return (
     <nav className="navbar">
-      <Logo className="left" />
-      <NavBarLinks className="right" />
+      <Logo />
+      <NavBarLinks />
       <ContactInfo />
     </nav>
   );
