@@ -1,11 +1,20 @@
 import React from "react";
 import "./ProjectCard.css";
+import guessTheLetterImage from "../../images/guess_the_letter.png";
+import keepItCodeImage from "../../images/keep_it_code.png";
 import placeHolderImage from "./200x200.png";
+import surviveTheGridImage from "../../images/survive_the_grid.gif";
+import temptationsImage from "../../images/temptations.png";
 
 export default function ProjectCard(props) {
   const images = {
-    placeHolderImage: placeHolderImage
+    guessTheLetterImage,
+    keepItCodeImage,
+    placeHolderImage,
+    surviveTheGridImage,
+    temptationsImage
   };
+
   const {
     deployedLink,
     description,
