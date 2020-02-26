@@ -33,8 +33,8 @@ export default function ProjectCard(props) {
       <h3>Tech Used</h3>
       <p>{techUsed}</p>
       <div>
-        <button href={deployedLink}>Deployed</button>
-        <button href={repositoryLink}>Repository</button>
+        <a href={deployedLink}>Deployed</a>
+        <a href={repositoryLink}>Repository</a>
       </div>
     </article>
   );
