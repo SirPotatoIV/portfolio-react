@@ -6,19 +6,26 @@ export default function ProjectCard(props) {
   const images = {
     placeHolderImage: placeHolderImage
   };
-  console.log(props);
+  const {
+    deployedLink,
+    description,
+    image,
+    name,
+    repositoryLink,
+    techUsed
+  } = props;
 
   return (
     <article className="project-card">
-      <h2>Project Name</h2>
-      <img alt="preview of the project" src={images["placeHolderImage"]} />
+      <h2>{name}</h2>
+      <img alt="preview of the project" src={images[image]} />
       <h3>Description</h3>
-      <p>This is a project</p>
+      <p>{description}</p>
       <h3>Tech Used</h3>
-      <p>The HTMLs, the CSSs, the Reacts</p>
+      <p>{techUsed}</p>
       <div>
-        <button>Deployed</button>
-        <button>Repository</button>
+        <button href={deployedLink}>Deployed</button>
+        <button href={repositoryLink}>Repository</button>
       </div>
     </article>
   );
